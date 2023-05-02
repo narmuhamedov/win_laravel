@@ -17,7 +17,10 @@ Route::get('/nawi_contakty', function () {
 })->name('contact');
 
 
-Route::post('/polushenie_dannyh', function () {
-    return dd(Request::all());
-//    return "This is WIN-1-21";
-})->name('contact-form');
+//Route::post('/polushenie_dannyh', function () {
+//    return dd(Request::all());
+////    return "This is WIN-1-21";
+//})->name('contact-form');
+
+Route::post('/polushenie_dannyh', 'ContactController@submit')->name('contact-form');
+
