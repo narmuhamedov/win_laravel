@@ -19,20 +19,19 @@ class ContactController extends Controller
         //переадресация
         return redirect()->route('home')->with('success', 'Данные отправлены с вами свяжутся');
 
+    }
+    public function allData(){
 
+        return view('messages', ['data'=>Contact::all()]);
 
+//        $contact = new Contact;
+//        dd($contact->all());
+    }
 
-
-
-
-
-
-
-//        $req->validate([
+    //        $req->validate([
 //            'subject'=>'required|min:5|max:10',
 //            'message'=>'required|min:15|max:200'
 //        ]);
-    }
 //    public function submit(Request $req){
 //        dd($req->input('message'));
 //        //return "It's good web";

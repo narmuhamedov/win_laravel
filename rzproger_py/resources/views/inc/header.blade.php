@@ -22,6 +22,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact')}}">Контакты</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('contact-data')}}">Список сообщений из контактов</a>
+                </li>
+
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
