@@ -24,6 +24,9 @@ Route::get('/nawi_contakty', function () {
 
 Route::post('/polushenie_dannyh', 'ContactController@submit')->name('contact-form');
 
+Route::get('/contact/all/{id}', 'ContactController@detailMessage')->name('contact-detail-one');
+
+
 Route::get('/contact/all', 'ContactController@allData')->name('contact-data');
 
 

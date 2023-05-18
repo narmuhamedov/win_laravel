@@ -28,6 +28,14 @@ class ContactController extends Controller
 //        dd($contact->all());
     }
 
+    public function detailMessage($id){
+        $contact = new Contact();
+        return view('detail-message', ['data'=>$contact->find($id)]);
+    }
+
+
+
+
     //        $req->validate([
 //            'subject'=>'required|min:5|max:10',
 //            'message'=>'required|min:15|max:200'
